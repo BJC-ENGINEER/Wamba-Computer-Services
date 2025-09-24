@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ProductCard from "../components/ProductCard";
 
 export default function Home() {
@@ -12,22 +13,32 @@ export default function Home() {
       </section>
 
       {/* Products Section */}
-      <section className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <ProductCard
-          name="Laptop Pro 15"
-          price="1200"
-          image="https://via.placeholder.com/150"
-        />
-        <ProductCard
-          name="Tablet X"
-          price="500"
-          image="https://via.placeholder.com/150"
-        />
-        <ProductCard
-          name="Wireless Mouse"
-          price="25"
-          image="https://via.placeholder.com/150"
-        />
+      <section>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <ProductCard
+            name="Laptop Pro 15"
+            price="1200"
+            image="https://via.placeholder.com/150"
+          />
+          <ProductCard
+            name="Tablet X"
+            price="500"
+            image="https://via.placeholder.com/150"
+          />
+          <ProductCard
+            name="Wireless Mouse"
+            price="25"
+            image="https://via.placeholder.com/150"
+          />
+        </div>
+
+        {/* Extra sentence */}
+        <p className="mt-6 text-center text-lg">
+          For more products, go to the{" "}
+          <Link to="/products" className="text-blue-600 font-semibold hover:underline">
+            Products page
+          </Link>.
+        </p>
       </section>
     </div>
   );
