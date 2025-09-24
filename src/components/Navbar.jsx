@@ -1,20 +1,20 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.png"; // make sure the path is correct
+import logo from "../assets/logo.png"; // adjust path if needed
 
 export default function Navbar() {
   return (
     <nav className="bg-blue-600 text-white px-6 py-4 flex justify-between items-center">
-      {/* Logo only */}
+      {/* Bigger Logo */}
       <Link to="/">
         <img 
           src={logo} 
           alt="Wamba Computer Services Logo" 
-          className="h-10 w-auto" 
+          className="h-24 w-auto md:h-28" 
         />
       </Link>
 
       {/* Navigation Links */}
-      <ul className="flex space-x-6">
+      <ul className="flex space-x-6 text-xl">
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/products">Products</Link></li>
