@@ -1,22 +1,35 @@
-import { Link } from "react-router-dom";
+import React from "react";
 
-export default function Home() {
+export default function About() {
   return (
-    <div className="px-6 py-8">
-      <h2 className="text-2xl font-bold mb-4">Featured Products</h2>
+    <div className="px-6 py-10 max-w-5xl mx-auto">
+      {/* Tagline */}
+      <h1 className="text-3xl font-bold text-center mb-6">
+        Welcome to Wamba Computer Services
+      </h1>
+      <p className="text-lg text-center mb-10 text-gray-700">
+        High-quality computers, tablets, and accessories at unbeatable prices.
+      </p>
 
-      {/* Example: your product grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {/* Render product cards here */}
+      {/* Vision */}
+      <div className="mb-8">
+        <h2 className="text-2xl font-semibold mb-3">🌍 Vision</h2>
+        <p className="text-gray-700 text-lg leading-relaxed">
+          To be the trusted electronics shop in Kigali, providing quality
+          computers, tablets, and accessories that make technology easy and
+          accessible for everyone.
+        </p>
       </div>
 
-      {/* New sentence for more products */}
-      <p className="mt-6 text-lg">
-        For more products, check the{" "}
-        <Link to="/products" className="text-blue-600 font-semibold hover:underline">
-          Products page
-        </Link>.
-      </p>
+      {/* Goal */}
+      <div>
+        <h2 className="text-2xl font-semibold mb-3">🎯 Goal</h2>
+        <p className="text-gray-700 text-lg leading-relaxed">
+          Our goal is to serve our customers with reliable products, fair
+          prices, and excellent service, helping individuals and businesses stay
+          connected and productive.
+        </p>
+      </div>
     </div>
   );
 }
