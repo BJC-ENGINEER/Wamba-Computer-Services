@@ -38,20 +38,20 @@ export default function Products() {
     },
     {
       name: "Wireless Keyboard with Mouse",
-      img: WirelessKeyboardwithmouseImg, // ✅ fixed
+      img: WirelessKeyboardwithmouseImg,
       description:
         "Compact wireless keyboard and mouse combo | Reliable & durable",
       price: "17,000 RWF",
     },
     {
       name: "HP EliteBook 820 G1",
-      img: HpElitebook820g1Img, // ✅ fixed
+      img: HpElitebook820g1Img,
       description: "8GB RAM | 256GB SSD | Slim & lightweight business laptop",
       price: "220,000 RWF",
     },
     {
       name: "HP ProBook 640 G1",
-      img: HpProbook640g1Img, // ✅ fixed
+      img: HpProbook640g1Img,
       description: "Core i5 | 4th Gen | 8GB RAM | 500GB HDD",
       price: "190,000 RWF",
     },
@@ -64,22 +64,28 @@ export default function Products() {
   ];
 
   return (
-    <div className="p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-      {products.map((product, index) => (
-        <div
-          key={index}
-          className="border rounded-xl shadow-lg p-4 flex flex-col items-center bg-white hover:shadow-2xl transition"
-        >
-          <img
-            src={product.img}
-            alt={product.name}
-            className="w-64 h-64 object-contain mb-4"
-          />
-          <h2 className="text-lg font-semibold mb-2">{product.name}</h2>
-          <p className="text-gray-600 text-sm mb-2">{product.description}</p>
-          <p className="text-blue-600 font-bold">{product.price}</p>
-        </div>
-      ))}
+    <div className="px-4 sm:px-6 py-6 max-w-screen-xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {products.map((product, index) => (
+          <div
+            key={index}
+            className="border rounded-xl shadow-lg p-4 flex flex-col items-center bg-white hover:shadow-2xl transition"
+          >
+            <img
+              src={product.img}
+              alt={product.name}
+              className="w-full h-64 sm:h-72 md:h-80 object-contain mb-4"
+            />
+            <h2 className="text-base sm:text-lg md:text-xl font-semibold mb-2 text-center">
+              {product.name}
+            </h2>
+            <p className="text-gray-600 text-sm sm:text-base mb-2 text-center">
+              {product.description}
+            </p>
+            <p className="text-blue-600 font-bold text-sm sm:text-base">{product.price}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

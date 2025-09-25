@@ -8,23 +8,23 @@ import SsdSataImg from "../assets/images/ssd-sata-256gb.jpg";
 
 export default function Home() {
   return (
-    <div className="p-6">
+    <div className="px-4 sm:px-6 py-6 max-w-screen-xl mx-auto">
       {/* Hero Section */}
       <section className="text-center mb-10">
-        <h2 className="text-3xl font-bold mb-2">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-2">
           Welcome to Wamba Computer Services
         </h2>
-        <p className="text-gray-700">
+        <p className="text-gray-700 text-sm sm:text-base max-w-lg mx-auto">
           Quality computers, tablets, and accessories at the best prices.
         </p>
       </section>
 
       {/* Featured Products Section */}
       <section>
-        <h3 className="text-2xl font-semibold mb-4 text-center">
+        <h3 className="text-xl sm:text-2xl font-semibold mb-4 text-center">
           Featured Products
         </h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <ProductCard
             name="All-in-One Lenovo"
             price="200,000 RWF"
@@ -46,7 +46,7 @@ export default function Home() {
         </div>
 
         {/* Call to Explore More */}
-        <p className="mt-6 text-center text-lg">
+        <p className="mt-6 text-center text-base sm:text-lg">
           Want to see more? Visit our{" "}
           <Link
             to="/products"
