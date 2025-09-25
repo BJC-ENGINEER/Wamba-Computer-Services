@@ -1,5 +1,5 @@
 import React from "react";
-import { FaPhone, FaWhatsapp, FaInstagram } from "react-icons/fa"; // React-icons for logos
+import { FaPhone, FaWhatsapp, FaInstagram, FaEnvelope } from "react-icons/fa"; // React-icons for logos
 
 export default function Contact() {
   return (
@@ -42,13 +42,23 @@ export default function Contact() {
             </li>
             <li className="flex items-center gap-3">
               <FaWhatsapp className="text-green-500 w-6 h-6" />
-              <a href="https://wa.me/250787478308" target="_blank" rel="noopener noreferrer" className="hover:underline">
+              <a
+                href="https://wa.me/250787478308"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
                 +250 787 478 308
               </a>
             </li>
             <li className="flex items-center gap-3">
               <FaInstagram className="text-pink-500 w-6 h-6" />
-              <a href="https://www.instagram.com/wamba_computer_services" target="_blank" rel="noopener noreferrer" className="hover:underline">
+              <a
+                href="https://www.instagram.com/wamba_computer_services"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
                 Wamba Computer Services
               </a>
             </li>
@@ -59,8 +69,11 @@ export default function Contact() {
               </a>
             </li>
             <li className="flex items-center gap-3">
-              <FaPhone className="text-blue-600 w-6 h-6" />
-              <a href="mailto:wamba4852@gmail.com" className="hover:underline">
+              <FaEnvelope className="text-red-600 w-6 h-6" />
+              <a
+                href="mailto:wamba4852@gmail.com"
+                className="hover:underline"
+              >
                 wamba4852@gmail.com
               </a>
             </li>
