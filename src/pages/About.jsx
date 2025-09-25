@@ -22,12 +22,23 @@ export default function About() {
       </div>
 
       {/* Goal */}
-      <div>
+      <div className="mb-8">
         <h2 className="text-2xl font-semibold mb-3">🎯 Goal</h2>
         <p className="text-gray-700 text-lg leading-relaxed">
           Our goal is to serve our customers with reliable products, fair
           prices, and excellent service, helping individuals and businesses stay
           connected and productive.
+        </p>
+      </div>
+
+      {/* Why Choose Us */}
+      <div>
+        <h2 className="text-2xl font-semibold mb-3">💡 Why Choose Us</h2>
+        <p className="text-gray-700 text-lg leading-relaxed">
+          We provide trusted products and services you can rely on.  
+          Our unbeatable prices make technology affordable for everyone.  
+          We are dedicated to excellent customer care with every purchase.  
+          Proudly serving Kigali since 2023, right near Makuza Peace Plaza.  
         </p>
       </div>
     </div>
