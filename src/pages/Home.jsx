@@ -26,7 +26,7 @@ export default function Home() {
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <ProductCard
-            name="All-in-One-lenovo"
+            name="all-in-One-lenovo"
             price="200,000 RWF"
             image={lenovoImg}
             description="Pentium, 4GB RAM, 500GB HDD – a compact all-in-one desktop for home or office."

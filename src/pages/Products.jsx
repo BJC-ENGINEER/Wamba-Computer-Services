@@ -56,7 +56,7 @@ export default function Products() {
       price: "190,000 RWF",
     },
     {
-      name: "All-in-One-lenovo",
+      name: "all-in-One-lenovo",
       img: LenovoImg,
       description: "Pentium | 4GB RAM | 500GB HDD | Compact all-in-one desktop",
       price: "200,000 RWF",
