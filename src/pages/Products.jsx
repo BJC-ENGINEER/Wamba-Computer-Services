@@ -1,64 +1,58 @@
 import React from "react";
-import LenovoImg from "../assets/images/Lenovo-all-in-one.jpg";
-import HpElite840Img from "../assets/images/hp-elitebook840-g3.jpg";
-import SsdSataImg from "../assets/images/ssd-sata-256gb.jpg";
-import dellLatitudeImg from "../assets/images/dell-latitude-2420.jpg";
-import LedProjector1Img from "../assets/images/led-projector-eo3i31-egate-1.jpg";
-import WirelessKeyboardwithmouseImg from "../assets/images/wireless-keyboard-with-mouse.jpg";
-import HpElitebook820g1Img from "../assets/images/hp-elitebook820-g1.jpg";
-import HpProbook640g1Img from "../assets/images/hp-probook640-g1.jpg";
 
 export default function Products() {
   const products = [
     {
       name: "HP EliteBook 840 G3",
-      img: HpElite840Img,
+      img: "/images/hp-elitebook840-g3.jpg",
       description: "Core i5 | 8GB RAM | 256GB SSD | Backlight keyboard",
       price: "270,000 RWF",
     },
     {
-      name: "dell Latitude 5420",
-      img: dellLatitudeImg,
+      name: "Dell Latitude 5420",
+      img: "/images/dell-latitude-2420.jpg",
       description:
         "Core i5 | 8GB RAM | 256GB SSD | Backlight keyboard | 11th Gen",
       price: "400,000 RWF",
     },
     {
       name: "SSD SATA 256GB",
-      img: SsdSataImg,
+      img: "/images/ssd-sata-256gb.jpg",
       description:
         "256GB SATA SSD – Fast storage upgrade for laptops and desktops",
       price: "30,000 RWF",
     },
     {
       name: "LED Projector - E03i31 EGATE",
-      img: LedProjector1Img,
-      description: "Portable LED projector | High brightness | Ideal for home & office",
+      img: "/images/led-projector-eo3i31-egate-1.jpg",
+      description:
+        "Portable LED projector | High brightness | Ideal for home & office",
       price: "180,000 RWF",
     },
     {
       name: "Wireless Keyboard with Mouse",
-      img: WirelessKeyboardwithmouseImg,
+      img: "/images/wireless-keyboard-with-mouse.jpg",
       description:
         "Compact wireless keyboard and mouse combo | Reliable & durable",
       price: "17,000 RWF",
     },
     {
       name: "HP EliteBook 820 G1",
-      img: HpElitebook820g1Img,
+      img: "/images/hp-elitebook820-g1.jpg",
       description: "8GB RAM | 256GB SSD | Slim & lightweight business laptop",
       price: "220,000 RWF",
     },
     {
       name: "HP ProBook 640 G1",
-      img: HpProbook640g1Img,
+      img: "/images/hp-probook640-g1.jpg",
       description: "Core i5 | 4th Gen | 8GB RAM | 500GB HDD",
       price: "190,000 RWF",
     },
     {
-      name: "Lenovo-all-in-one",
-      img: LenovoImg,
-      description: "Pentium | 4GB RAM | 500GB HDD | Compact all-in-one desktop",
+      name: "Lenovo All-in-One",
+      img: "/images/lenovo-all-in-one.jpg",
+      description:
+        "Pentium | 4GB RAM | 500GB HDD | Compact all-in-one desktop",
       price: "200,000 RWF",
     },
   ];
@@ -82,7 +76,9 @@ export default function Products() {
             <p className="text-gray-600 text-sm sm:text-base mb-2 text-center">
               {product.description}
             </p>
-            <p className="text-blue-600 font-bold text-sm sm:text-base">{product.price}</p>
+            <p className="text-blue-600 font-bold text-sm sm:text-base">
+              {product.price}
+            </p>
           </div>
         ))}
       </div>
