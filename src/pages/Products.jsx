@@ -1,5 +1,5 @@
 import React from "react";
-import LenovoImg from "../assets/images/lenovo-all-in-one.jpg";
+import LenovoImg from "../assets/images/Lenovo-all-in-one.jpg";
 import HpElite840Img from "../assets/images/hp-elitebook840-g3.jpg";
 import SsdSataImg from "../assets/images/ssd-sata-256gb.jpg";
 import DellLatitudeImg from "../assets/images/dell-latitude-2420.jpg";

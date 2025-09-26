@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import ProductCard from "../components/ProductCard";
 
 // Import first 3 product images
-import LenovoImg from "../assets/images/lenovo-all-in-one.jpg";
+import LenovoImg from "../assets/images/Lenovo-all-in-one.jpg";
 import HpElite840Img from "../assets/images/hp-elitebook840-g3.jpg";
 import SsdSataImg from "../assets/images/ssd-sata-256gb.jpg";
 
