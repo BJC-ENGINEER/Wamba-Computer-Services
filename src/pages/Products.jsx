@@ -1,5 +1,5 @@
 import React from "react";
-import LenovoImg from "../assets/images/all-in-one-lenovo.jpg";
+import LenovoImg from "../assets/images/lenovo-all-in-one.jpg";
 import HpElite840Img from "../assets/images/hp-elitebook840-g3.jpg";
 import SsdSataImg from "../assets/images/ssd-sata-256gb.jpg";
 import DellLatitudeImg from "../assets/images/dell-latitude-2420.jpg";
@@ -56,7 +56,7 @@ export default function Products() {
       price: "190,000 RWF",
     },
     {
-      name: "all-in-One-lenovo",
+      name: "Lenovo-all-in-one",
       img: LenovoImg,
       description: "Pentium | 4GB RAM | 500GB HDD | Compact all-in-one desktop",
       price: "200,000 RWF",
