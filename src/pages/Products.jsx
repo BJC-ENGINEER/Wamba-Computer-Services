@@ -2,7 +2,7 @@ import React from "react";
 import LenovoImg from "../assets/images/Lenovo-all-in-one.jpg";
 import HpElite840Img from "../assets/images/hp-elitebook840-g3.jpg";
 import SsdSataImg from "../assets/images/ssd-sata-256gb.jpg";
-import DellLatitudeImg from "../assets/images/dell-latitude-2420.jpg";
+import dellLatitudeImg from "../assets/images/dell-latitude-2420.jpg";
 import LedProjector1Img from "../assets/images/led-projector-eo3i31-egate-1.jpg";
 import WirelessKeyboardwithmouseImg from "../assets/images/wireless-keyboard-with-mouse.jpg";
 import HpElitebook820g1Img from "../assets/images/hp-elitebook820-g1.jpg";
@@ -17,8 +17,8 @@ export default function Products() {
       price: "270,000 RWF",
     },
     {
-      name: "Dell Latitude 5420",
-      img: DellLatitudeImg,
+      name: "dell Latitude 5420",
+      img: dellLatitudeImg,
       description:
         "Core i5 | 8GB RAM | 256GB SSD | Backlight keyboard | 11th Gen",
       price: "400,000 RWF",
