@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import ProductCard from "../components/ProductCard";
 
 // Import first 3 product images
-import LenovoImg from "../assets/images/all-in-one-lenovo.jpg";
+import lenovoImg from "../assets/images/all-in-one-lenovo.jpg";
 import HpElite840Img from "../assets/images/hp-elitebook840-g3.jpg";
 import SsdSataImg from "../assets/images/ssd-sata-256gb.jpg";
 
@@ -26,9 +26,9 @@ export default function Home() {
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <ProductCard
-            name="All-in-One Lenovo"
+            name="All-in-One-lenovo"
             price="200,000 RWF"
-            image={LenovoImg}
+            image={lenovoImg}
             description="Pentium, 4GB RAM, 500GB HDD – a compact all-in-one desktop for home or office."
           />
           <ProductCard
