@@ -1,18 +1,42 @@
+import React from "react";
 import { Link } from "react-router-dom";
-import ProductCard from "../components/ProductCard";
 
-// Import first 3 product images
-import LenovoImg from "../assets/images/Lenovo-all-in-one.jpg";
-import HpElite840Img from "../assets/images/hp-elitebook840-g3.jpg";
-import SsdSataImg from "../assets/images/ssd-sata-256gb.jpg";
+// Import images from assets/images
+import LenovoImg from "../assets/images/ALL-IN-ONE-LENOVO.jpg";
+import HpElite840Img from "../assets/images/HP-ELITEBOOK840-G3.jpg";
+import SsdSataImg from "../assets/images/SSD-SATA256GB.jpg";
 
 export default function Home() {
+  const featuredProducts = [
+    {
+      name: "LENOVO-ALL-IN-ONE",
+      img: LenovoImg,
+      description:
+        "Pentium, 4GB RAM, 500GB HDD – a compact all-in-one desktop for home or office.",
+      price: "200,000 RWF",
+    },
+    {
+      name: "HP ELITEBOOK 840 G3",
+      img: HpElite840Img,
+      description:
+        "Core i5, 8GB RAM, 256GB SSD, Backlight keyboard – perfect for professionals.",
+      price: "270,000 RWF",
+    },
+    {
+      name: "SSD SATA 256GB",
+      img: SsdSataImg,
+      description:
+        "Fast 256GB SATA SSD – boost performance and storage for laptops & desktops.",
+      price: "30,000 RWF",
+    },
+  ];
+
   return (
     <div className="px-4 sm:px-6 py-6 max-w-screen-xl mx-auto">
       {/* Hero Section */}
       <section className="text-center mb-10">
         <h2 className="text-2xl sm:text-3xl font-bold mb-2">
-          Welcome to Wamba Computer Services
+          WELCOME TO WAMBA COMPUTER SERVICES
         </h2>
         <p className="text-gray-700 text-sm sm:text-base max-w-lg mx-auto">
           Quality computers, tablets, and accessories at the best prices.
@@ -22,27 +46,30 @@ export default function Home() {
       {/* Featured Products Section */}
       <section>
         <h3 className="text-xl sm:text-2xl font-semibold mb-4 text-center">
-          Featured Products
+          FEATURED PRODUCTS
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <ProductCard
-            name="Lenovo-all-in-one"
-            price="200,000 RWF"
-            image={LenovoImg}
-            description="Pentium, 4GB RAM, 500GB HDD – a compact all-in-one desktop for home or office."
-          />
-          <ProductCard
-            name="HP EliteBook 840 G3"
-            price="270,000 RWF"
-            image={HpElite840Img}
-            description="Core i5, 8GB RAM, 256GB SSD, Backlight keyboard – perfect for professionals."
-          />
-          <ProductCard
-            name="SSD SATA 256GB"
-            price="30,000 RWF"
-            image={SsdSataImg}
-            description="Fast 256GB SATA SSD – boost performance and storage for laptops & desktops."
-          />
+          {featuredProducts.map((product, index) => (
+            <div
+              key={index}
+              className="border rounded-xl shadow-lg p-4 flex flex-col items-center bg-white hover:shadow-2xl transition"
+            >
+              <img
+                src={product.img}
+                alt={product.name}
+                className="w-full h-64 sm:h-72 md:h-80 object-contain mb-4"
+              />
+              <h2 className="text-base sm:text-lg md:text-xl font-semibold mb-2 text-center">
+                {product.name}
+              </h2>
+              <p className="text-gray-600 text-sm sm:text-base mb-2 text-center">
+                {product.description}
+              </p>
+              <p className="text-blue-600 font-bold text-sm sm:text-base">
+                {product.price}
+              </p>
+            </div>
+          ))}
         </div>
 
         {/* Call to Explore More */}
@@ -52,7 +79,7 @@ export default function Home() {
             to="/products"
             className="text-blue-600 font-semibold hover:underline"
           >
-            Products page
+            PRODUCTS PAGE
           </Link>{" "}
           to explore all categories.
         </p>
