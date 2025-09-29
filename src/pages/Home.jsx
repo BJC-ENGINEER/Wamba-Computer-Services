@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaWhatsapp } from "react-icons/fa"; // Import WhatsApp icon
 
 // Import images from assets/images
 import LenovoImg from "../assets/images/ALL-IN-ONE-LENOVO.jpg";
@@ -77,9 +78,22 @@ export default function Home() {
               <p className="text-gray-600 text-sm sm:text-base mb-2 text-center">
                 {product.description}
               </p>
-              <p className="text-blue-600 font-bold text-sm sm:text-base">
+              <p className="text-blue-600 font-bold text-sm sm:text-base mb-3">
                 {product.price}
               </p>
+
+              {/* WhatsApp button */}
+              <a
+                href={`https://wa.me/250783405592?text=Hello, I'm interested in ${encodeURIComponent(
+                  product.name
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600 transition"
+              >
+                <FaWhatsapp className="text-lg" />
+                Chat on WhatsApp
+              </a>
             </div>
           ))}
         </div>

@@ -1,11 +1,11 @@
 import React from "react";
+import { FaWhatsapp } from "react-icons/fa"; // Import WhatsApp icon
 
 // Import images (make sure names/extensions match exactly in your folder)
 import LenovoImg from "../assets/images/ALL-IN-ONE-LENOVO.jpg";
 import HpElite840Img from "../assets/images/HP-ELITEBOOK840-G3.jpg";
 import SsdSataImg from "../assets/images/SSD-SATA256GB.jpg";
 import DellLatitudeImg from "../assets/images/DELL-LATITUDE5420.jpg";
-import LedProjectorImg from "../assets/images/LED-PROJECTOR-E03I31-EGATE.jpg";
 import WirelessKeyboardWithMouseImg from "../assets/images/WIRELESS-KEYBOARD-WITH-MOUSE.jpg";
 import HpElitebook820g1Img from "../assets/images/HP-ELITEBOOK820-G1.jpg";
 import HpProbook640g1Img from "../assets/images/HP-PROBOOK640-G1.jpg";
@@ -36,13 +36,6 @@ export default function Products() {
       description:
         "Core i5 | 8GB RAM | 256GB SSD | Backlight keyboard | 11th Gen",
       price: "400,000 RWF",
-    },
-    {
-      name: "LED PROJECTOR E03I31 EGATE",
-      img: LedProjectorImg,
-      description:
-        "Portable LED projector | High brightness | Ideal for home & office",
-      price: "180,000 RWF",
     },
     {
       name: "WIRELESS KEYBOARD WITH MOUSE",
@@ -87,9 +80,22 @@ export default function Products() {
             <p className="text-gray-600 text-sm sm:text-base mb-2 text-center">
               {product.description}
             </p>
-            <p className="text-blue-600 font-bold text-sm sm:text-base">
+            <p className="text-blue-600 font-bold text-sm sm:text-base mb-3">
               {product.price}
             </p>
+
+            {/* WhatsApp button with icon */}
+            <a
+              href={`https://wa.me/250783405592?text=Hello, I'm interested in ${encodeURIComponent(
+                product.name
+              )}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600 transition"
+            >
+              <FaWhatsapp className="text-lg" />
+              Chat on WhatsApp
+            </a>
           </div>
         ))}
       </div>
