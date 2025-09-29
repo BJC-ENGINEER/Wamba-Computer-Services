@@ -43,6 +43,18 @@ export default function Home() {
         </p>
       </section>
 
+      {/* Introduction Section */}
+      <section className="mb-10 text-left">
+        <h3 className="text-xl sm:text-2xl font-semibold mb-3">Introduction</h3>
+        <p className="text-gray-800 text-sm sm:text-base leading-relaxed max-w-2xl">
+          Wamba-Computer-Services is an electronic shop located in Kigali near
+          Makuza Peace Plaza. We buy and sell computers, tablets, and
+          accessories. Since 2023, we have been proudly serving Kigali with
+          quality products and reliable services. We are committed to offering
+          the best prices and ensuring that electronics are always near you.
+        </p>
+      </section>
+
       {/* Featured Products Section */}
       <section>
         <h3 className="text-xl sm:text-2xl font-semibold mb-4 text-center">
